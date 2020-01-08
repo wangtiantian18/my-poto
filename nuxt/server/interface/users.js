@@ -61,7 +61,7 @@ router.post('/signup', async (ctx)=>{
     })
     //自动登录
     if(newUser){
-        let res = await Axios.post('http://192.168.30.147:3000/users/signin',{
+        let res = await Axios.post('/users/signin',{
             username,
             password
         })
